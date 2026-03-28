@@ -13,13 +13,17 @@
     color: #050f0b;
   }
 
+  input, textarea{
+    z-index: 1; // don't know why working without this otherwise you won't see the text
+  }
+
   button:hover {
     background-color: #5000ca;
     color: white;
   }
 
   fieldset {
-    background-color: white;
+    background-color: #fff;
   }
 }
 
