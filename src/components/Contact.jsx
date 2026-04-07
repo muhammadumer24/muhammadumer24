@@ -10,17 +10,17 @@ import { Resend } from 'resend';
 
 function Contact() {
 
-  const [name, setName] = useState<string>('');
-  const [email, setEmail] = useState<string>('');
-  const [message, setMessage] = useState<string>('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  const [nameError, setNameError] = useState<boolean>(false);
-  const [emailError, setEmailError] = useState<boolean>(false);
-  const [messageError, setMessageError] = useState<boolean>(false);
+  const [nameError, setNameError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
 
   const form = useRef();
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e) => {
     const resend = new Resend('re_7DbTVLRq_4pxMHGyLS7Qts3g3RRH1mn93')
     e.preventDefault();
 
@@ -70,6 +70,7 @@ function Contact() {
                 label="Your Name"
                 placeholder="What's your name?"
                 value={name}
+                name='name'
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
@@ -80,6 +81,8 @@ function Contact() {
                 required
                 id="outlined-required"
                 label="Email / Phone"
+                name='email'
+                type='email'
                 placeholder="How can I reach you?"
                 value={email}
                 onChange={(e) => {

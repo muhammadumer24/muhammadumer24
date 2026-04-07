@@ -9,8 +9,8 @@ function Project() {
     const projects = [
         {
             name: "Amazon Web Extension",
-            desc: "Developed a SaaS project that helps amazon sellers to have more detailed insights across the whole market.",
-            link: '#',
+            desc: "Developed a SaaS project that helps amazon sellers to have detailed insights across the whole Amazon market.",
+            link: 'https://geniusdigger.com',
             img: mock1
         },
         {
@@ -21,7 +21,7 @@ function Project() {
         },
         {
             name: "StyleSnap",
-            desc: "Fetches images, colors, fonts and other style elements from the given page",
+            desc: "Fetches images, colors, fonts and other style elements from the given page.",
             link: 'https://chromewebstore.google.com/detail/stylesnap/bppfidflicaojmhmglppdpjhbchilode',
             img: mock3
         },
@@ -39,8 +39,8 @@ function Project() {
             <h1>Personal Projects</h1>
             <div className="projects-grid">
                 {projects.map((project) => (
-                    <div className="project">
-                        <a href={project.link} target="_blank" rel="noreferrer"><img src={project.img} className="zoom" alt={project.name} height="400vh" /></a>
+                    <div className="project" key={project.name}>
+                        <a href={project.link} target="_blank" rel="noreferrer"><img src={project.img} className="zoom" alt={project.name} /></a>
                         <a href={project.link} target="_blank" rel="noreferrer"><h2>{project.name}</h2></a>
                         <p>{project.desc}</p>
 

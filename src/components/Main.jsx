@@ -1,6 +1,6 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import me from '../assets/images/me.jpg'
+import me from '../assets/images/me.png'
 import '../assets/styles/Main.scss';
 
 function Main() {
