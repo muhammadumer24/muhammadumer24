@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/muhammadumer24/static/css/main.e744734d.css",
-    "main.js": "/muhammadumer24/static/js/main.51a5dc10.js",
+    "main.css": "/muhammadumer24/static/css/main.cb01224e.css",
+    "main.js": "/muhammadumer24/static/js/main.27de73f1.js",
     "static/js/453.1b0d4a06.chunk.js": "/muhammadumer24/static/js/453.1b0d4a06.chunk.js",
     "static/media/mock1.png": "/muhammadumer24/static/media/mock1.44e7512cd35d97008e05.png",
     "static/media/bg-light.png": "/muhammadumer24/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/muhammadumer24/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/me.png": "/muhammadumer24/static/media/me.d6f3f4bb4ac00f1a8120.png",
     "static/media/mock3.png": "/muhammadumer24/static/media/mock3.2de5be357bc7ef61272a.png",
-    "static/media/me.jpg": "/muhammadumer24/static/media/me.89a9f2fffe0fa923d284.jpg",
     "static/media/mock2.png": "/muhammadumer24/static/media/mock2.4e37d48da99026eeb053.png",
     "static/media/mock4.png": "/muhammadumer24/static/media/mock4.676ee6811205a86364e4.png",
     "index.html": "/muhammadumer24/index.html",
-    "main.e744734d.css.map": "/muhammadumer24/static/css/main.e744734d.css.map",
-    "main.51a5dc10.js.map": "/muhammadumer24/static/js/main.51a5dc10.js.map",
+    "main.cb01224e.css.map": "/muhammadumer24/static/css/main.cb01224e.css.map",
+    "main.27de73f1.js.map": "/muhammadumer24/static/js/main.27de73f1.js.map",
     "453.1b0d4a06.chunk.js.map": "/muhammadumer24/static/js/453.1b0d4a06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e744734d.css",
-    "static/js/main.51a5dc10.js"
+    "static/css/main.cb01224e.css",
+    "static/js/main.27de73f1.js"
   ]
 }
