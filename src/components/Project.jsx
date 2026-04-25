@@ -2,6 +2,7 @@ import mock1 from '../assets/images/mock1.png';
 import mock2 from '../assets/images/mock2.png';
 import mock3 from '../assets/images/mock3.png';
 import mock4 from '../assets/images/mock4.png';
+import mock5 from '../assets/images/mock5.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -21,9 +22,15 @@ function Project() {
         },
         {
             name: "StyleSnap",
-            desc: "Fetches images, colors, fonts and other style elements from the given page.",
+            desc: "Fetches images, colors, fonts and other style elements from the any website.",
             link: 'https://chromewebstore.google.com/detail/stylesnap/bppfidflicaojmhmglppdpjhbchilode',
             img: mock3
+        },
+        {
+            name: 'Notes.Homes - Zillow Comments Extension',
+            desc: "A web extension that allows users to add comments and notes to Zillow listings, providing a personalized experience for home-buyers.",
+            link: '#',
+            img: mock5
         },
         {
             name: "Shortcut101",

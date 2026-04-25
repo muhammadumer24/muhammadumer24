@@ -6,9 +6,10 @@ import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
 
-import { Resend } from 'resend';
 
 function Contact() {
+
+  emailjs.init({ publicKey: 'ZbuZN4p75CmxnifOu' });
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -20,34 +21,42 @@ function Contact() {
 
   const form = useRef();
 
-  const sendEmail = (e) => {
-    const resend = new Resend('re_7DbTVLRq_4pxMHGyLS7Qts3g3RRH1mn93')
+  const sendEmail = async (e) => {
+
     e.preventDefault();
+    try {
 
-    setNameError(name === '');
-    setEmailError(email === '');
-    setMessageError(message === '');
+      setNameError(name === '');
+      setEmailError(email === '');
+      setMessageError(message === '');
 
-    /* Uncomment below if you want to enable the emailJS */
+      /* Uncomment below if you want to enable the emailJS */
 
-    if (name !== '' && email !== '' && message !== '') {
-      var templateParams = {
-        name: name,
-        email: email,
-        message: message
-      };
+      if (name !== '' && email !== '' && message !== '') {
+        const templateParams = {
+          name: name,
+          email: email,
+          message: message
+        };
 
-      console.log(templateParams);
-      resend.emails.send({
-        from: 'umer145724@gmail.com',
-        to: email,
-        subject: 'Hello World',
-        html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
-      });
-      // setName('');
-      // setEmail('');
-      // setMessage('');
+
+        const result = await emailjs.send('service_vbhjdoi', 'template_75ronxd', templateParams)
+        if (result.status !== 200) {
+          console.log(result)
+          return alert('An error occurred while sending your message. Please try again later.');
+        }
+        alert('Message sent successfully!', 'success');
+
+        setName('');
+        setEmail('');
+        setMessage('');
+      }
     }
+    catch (error) {
+      console.error('Error sending email:', error);
+      alert('An error occurred while sending your message. Please try again later.', 'error');
+    }
+
   };
 
   return (
