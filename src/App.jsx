@@ -13,6 +13,7 @@ import Texture from './components/Texture'
 
 import './index.scss';
 import Alert from "./components/Alert";
+import Reviews from "./components/Reviews";
 
 function App() {
     const [mode, setMode] = useState('dark');
@@ -46,6 +47,7 @@ function App() {
                 {<Alert {...alertState} setAlertState={setAlertState} />}
                 {/* <Timeline /> */}
                 <Project />
+                <Reviews />
                 <Contact />
             </FadeIn>
             <Footer />

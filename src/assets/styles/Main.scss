@@ -24,12 +24,18 @@
     .social_icons {
         display: flex;
         flex-direction: row;
+        place-items: center;
         gap: 10px;
         color: white;
 
         svg {
             font-size: 1.8em;
+            color: unset;
         }
+    }
+
+    .social_icons img{
+        width: 30px;
     }
 
     .mobile_social_icons {
@@ -132,6 +138,7 @@
         .mobile_social_icons {
             padding-top: 10px;
             display: flex !important;
+            place-items: center;
             flex-direction: row;
             gap: 10px;
             color: white;

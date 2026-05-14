@@ -4,12 +4,27 @@ footer {
     padding-bottom: 50px;
 
     svg {
-        width: 1.1em !important;
-        height: 1.1em !important;
         margin-right: 10px;
     }
 
     p {
         font-size: 0.8em;
+    }
+
+    .footer-icons{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a:hover svg{
+        color: #5000ca;
+    }
+}
+
+.light-mode {
+    footer svg{
+        color:#000
     }
 }

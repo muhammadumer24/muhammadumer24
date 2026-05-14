@@ -1,7 +1,11 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import fiverrIcon from '../assets/images/fiverr.svg';
+import { ReactComponent as FiverrIcon } from '../assets/images/fiverr.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUpwork } from '@fortawesome/free-brands-svg-icons';
+
 import me from '../assets/images/me.png'
+
 import '../assets/styles/Main.scss';
 
 function Main() {
@@ -16,14 +20,17 @@ function Main() {
           <div className="social_icons">
             <a href="https://github.com/mrumerf" target="_blank" rel="noreferrer"><GitHubIcon /></a>
             <a href="https://www.linkedin.com/in/mrumerf/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
-            <a href="https://fiverr.com/muhammadyazi" target="_blank" rel="noreferrer"><img src={fiverrIcon} alt='Fiverr' /></a>
+            <a href="https://fiverr.com/muhammadyazi" target="_blank" rel="noreferrer"><FiverrIcon /></a>
+            <a href="https://upwork.com/freelancers/mrumer" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faUpwork} /></a>
           </div>
           <h1>Muhammad Umer</h1>
-          <p>Full Stack Developer | <strong>MERN Stack</strong></p>
+          <p>Full Stack | Chrome Extension | SaaS Developer</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/mrumerf" target="_blank" rel="noreferrer"><GitHubIcon /></a>
             <a href="https://www.linkedin.com/in/mrumerf/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
+            <a href="https://fiverr.com/muhammadyazi" target="_blank" rel="noreferrer"><FiverrIcon /></a>
+            <a href="https://upwork.com/freelancers/mrumer" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faUpwork} /></a>
           </div>
         </div>
       </div>

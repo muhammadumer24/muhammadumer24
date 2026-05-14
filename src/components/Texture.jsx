@@ -60,7 +60,7 @@ const App = ({ isDark }) => {
                         "type": "circle"
                     },
                     "onHover": {
-                        "enable": true,
+                        "enable": false,
                         "mode": "grab",
                         "parallax": {
                             "enable": true,
@@ -88,7 +88,7 @@ const App = ({ isDark }) => {
                         "speed": 1
                     },
                     "bounce": {
-                        "distance": 200
+                        "distance": 2000
                     },
                     "bubble": {
                         "distance": 400,
@@ -368,7 +368,7 @@ const App = ({ isDark }) => {
                     }
                 },
                 "stroke": {
-                    "width": 0
+                    "width": 1
                 },
                 "zIndex": {
                     "value": 0,
